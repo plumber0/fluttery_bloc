@@ -1,0 +1,24 @@
+BlocProvider will provide a single instance of a bloc to the subtree below it.
+
+Dependency Injection
+
+sub widget can access via
+
+BlocProvider.of<BlocA>(context);
+
+context.bloc<BlocA>();
+
+By default, BlocProvider creates the bloc lazily
+
+BlocProvider handles the closing part of blocs automatically
+
+///
+BlocProvider.value(
+    value: BlocProvider.of<BlocA>(context),
+    child: AnotherUsefulScreen(),
+)
+
+provides the only instance of blocA to the new portion of the tree
+
+
+Since the only instance of BlocA was created with BlocProvider, it will get automatically closed by the BlocProvider
