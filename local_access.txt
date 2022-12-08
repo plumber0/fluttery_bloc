@@ -1,1 +1,24 @@
 providing an instance of a bloc/cubit to a single screen (to its entire widget tree)
+
+Providing an instance of a bloc/cubit to mutiple screens is called route access
+
+
+Flutter Routing Options
+
+1. Anonymous Routing
+    - Navigating without a route name
+    - Only the screens are used to navigate
+    - suitable for small applications
+2. Named Routing
+    - Navigating with a route name
+    - routenames and their associated screen are set up inside
+        routes parameter of Materialapp widget
+    - suitable for small-medium applications
+3. Generated Routing
+    - Navigating with a route name
+    - Route Names and their associated Screens are set up inside
+        a seperate onGenerateRoute function
+    - Suitable for Large applications
+
+
+BlocProvider.value(value: existingBloc,);
