@@ -27,3 +27,8 @@ BlocProvider.value(value: existingBloc,);
 
 Named Route Access providing an existing instance of bloc/cubit
 to multiple screens, while navigating with Named Routes
+
+
+## Global Access
+
+wrap MaterialApp with BlocProvider will provide all the blocs/cubits globally to all screens
