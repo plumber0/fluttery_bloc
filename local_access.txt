@@ -1,0 +1,1 @@
+providing an instance of a bloc/cubit to a single screen (to its entire widget tree)
