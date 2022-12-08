@@ -1,0 +1,3 @@
+BlocProvider and RepositoryProvider are identical
+except that one provides a unique instance of a bloc(BlocProvider),
+while the other one provides a unique instance of a repository(RepositoryProvider)

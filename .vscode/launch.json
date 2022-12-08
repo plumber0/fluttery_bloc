@@ -7,7 +7,8 @@
         {
             "name": "fluttery_bloc",
             "request": "launch",
-            "type": "dart"
+            "type": "dart",
+            "program": "lib/main.dart"
         },
         {
             "name": "fluttery_bloc (profile mode)",
