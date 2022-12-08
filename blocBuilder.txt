@@ -1,0 +1,25 @@
+BlocBuilder
+
+(Re-Builds the UI for every new state coming from the bloc)
+
+a widget that helps re-building the UI based on bloc STATE changes
+
+BlocBuilder<BlocA, BlocAState>(
+    // cubit: BlocProvider.of<BlocA>(context)
+    /// The bloc/cubit may be ommited & the instance will be searched via BlocProvider in the widget tree
+    builder:(context, state) {
+        // the builder function must be a pure function
+        // pure function : return value should only depends on function parameter
+
+        // the builder function can be called multiple times! (due to how flutter engine works)
+
+
+        return widget here based on BlocA's state
+
+
+    } 
+    buildWhen: (previousState, state) {
+        // return true/ false to determine whether or not to rebuild the widget with state
+    }
+
+)
