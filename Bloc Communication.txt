@@ -1,0 +1,19 @@
+StreamSubscription
+
+Pros
+ - organized, structured, easy to read & maintain
+ - will help you practice stream skills
+
+Cons
+  - it may get cluttered really fast on huge apps
+  - not closing streamSubscriptions => huge memory leaks
+
+
+BlocListener
+
+Pros
+  - It takes care internally of all streamSubscriptions
+  - No need to take care of steram/memory leaks anymore
+
+Cons
+  - The UI may get cluttered & hard to read with multiple BlocListners

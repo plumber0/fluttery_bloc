@@ -1,9 +1,0 @@
-StreamSubscription
-
-Pros
- - organized, structured, easy to read & maintain
- - will help you practice stream skills
-
-Cons
-  - it may get cluttered really fast on huge apps
-  - not closing streamSubscriptions => huge memory leaks
