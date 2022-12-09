@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttery_bloc/presentation/router/app_router.dart';
-import 'package:fluttery_bloc/presentation/screen/second_screen.dart';
-import 'package:fluttery_bloc/presentation/screen/third_screen.dart';
 
-import 'logic/cubit/counter_cubit.dart';
-import 'presentation/screen/home_screen.dart';
+import 'logic/cubit/cubit/counter_cubit.dart';
 
 void main() {
   runApp(MyApp());

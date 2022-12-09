@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:fluttery_bloc/logic/cubit/counter_cubit.dart';
-import 'package:fluttery_bloc/presentation/screen/second_screen.dart';
+import 'package:fluttery_bloc/logic/cubit/cubit/counter_cubit.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key, this.title, this.color}) : super(key: key);
