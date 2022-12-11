@@ -26,4 +26,16 @@ class CounterCubit extends HydratedCubit<CounterState> {
     /// execute whenever state change
     return state.toMap();
   }
+
+  @override
+  void onChange(Change<CounterState> change) {
+    print(change);
+    super.onChange(change);
+  }
+
+  @override
+  void onError(Object error, StackTrace stackTrace) {
+    print("$error, $stackTrace");
+    super.onError(error, stackTrace);
+  }
 }
