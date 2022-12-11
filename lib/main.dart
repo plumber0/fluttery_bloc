@@ -5,6 +5,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttery_bloc/logic/cubit/cubit/internet_cubit_cubit.dart';
 
 import 'package:fluttery_bloc/presentation/router/app_router.dart';
+import 'package:hydrated_bloc/hydrated_bloc.dart';
+import 'package:path_provider/path_provider.dart';
 
 import 'logic/cubit/cubit/counter_cubit.dart';
 
@@ -14,7 +16,12 @@ import 'logic/cubit/cubit/counter_cubit.dart';
 /// creat at the top inside of main fuction
 /// and then injected in to the app
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  HydratedBloc.storage = await HydratedStorage.build(
+      storageDirectory: await getApplicationDocumentsDirectory());
+
   runApp(MyApp(
     appRouter: AppRouter(),
     connectivity: Connectivity(),

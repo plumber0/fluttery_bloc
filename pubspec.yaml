@@ -29,6 +29,8 @@ dependencies:
   test: ^1.15.2
   bloc_test: ^7.0.4
   equatable: ^1.2.5
+  hydrated_bloc: ^6.0.0
+  path_provider: ^1.6.24
 
 
   # The following adds the Cupertino Icons font to your application.
