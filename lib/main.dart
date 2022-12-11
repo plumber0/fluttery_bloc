@@ -3,6 +3,7 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttery_bloc/logic/cubit/cubit/internet_cubit_cubit.dart';
+import 'package:fluttery_bloc/logic/cubit/cubit/utility/app_bloc_observer.dart';
 
 import 'package:fluttery_bloc/presentation/router/app_router.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
@@ -21,6 +22,8 @@ void main() async {
 
   HydratedBloc.storage = await HydratedStorage.build(
       storageDirectory: await getApplicationDocumentsDirectory());
+
+  Bloc.observer = AppBlocObserver();
 
   runApp(MyApp(
     appRouter: AppRouter(),
