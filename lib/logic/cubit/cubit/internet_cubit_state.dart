@@ -1,11 +1,7 @@
 part of 'internet_cubit_cubit.dart';
 
-abstract class InternetCubitState extends Equatable {
-  const InternetCubitState();
-
-  @override
-  List<Object> get props => [];
-}
+@immutable
+abstract class InternetCubitState {}
 
 class InternetLoading extends InternetCubitState {}
 
